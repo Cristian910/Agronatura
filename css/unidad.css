@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+body {
+    margin: 0;    
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    }
+/*estilos del navegador*/
+.nave {
+    display: flex;
+    justify-content: space-between; 
+    background: none;
+    border: none;
+    width: 100%;
+    }
+    .logo {
+    margin-top: 8px;
+    margin-left: 20px;    
+    }
+    .menu a {
+        display: block;
+        padding: 15px 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 20px;  
+    }
+    .menu {
+    
+        display: flex;
+        margin-right: 20px;
+        
+        }
+    /*hover de links del navegador*/
+    a:hover {
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        color: white;  
+        height: 70%; 
+    }
+    /*estilos botones menu responsive*/
+    .open-menu{
+        position: relative;
+        margin-top: 200px;
+    }
+    .open-menu,.close-menu{
+        display: none;
+    }
+
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 40px;
+        cursor: pointer;
+    }   
+        
+/*estilos header*/
+    header {
+    background: url(../img/cow.jpg);   
+    height: 100vh;
+    background-size: cover; 
+    }  
+    .tit {
+        text-align: center;
+        margin-top: 100px;
+        }
+    .titulo {
+
+        font-size: 50px;
+        font-family: 'Yeseva One';
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+    /*estilos main*/
+    .unid {
+        padding: 100px 0;
+        position: relative;
+        background-color: #E1E2E6;
+        } 
+        .unid-content  {
+        text-align: center;
+        }
+        .titulos {
+            font-size: 50px;
+            line-height: 70px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0 50px;
+            margin-bottom: 25px;
+            }
+            .titu {
+            margin-top: 40px; 
+            color: #fff;   
+            }
+        .txt-p {
+        font-size: 16px;
+        padding: 0 250px;
+        margin-bottom: 35px;    
+        }
+        .unid-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;    
+        }
+        .unid-1 {
+        padding: 0 25px;    
+        }
+        .unid-1 img {
+        width: 200px;   
+        }
+        .container {
+            margin: auto 0;   
+            } 
+        /*estilos botones de main*/
+            .button {
+                display: inline-block;
+                padding: 11px 35px;
+                background: rgb(14, 134, 14);
+                color: white;
+                text-transform: uppercase; 
+                text-decoration: none; 
+                cursor: pointer;  
+                border-radius: 5%;
+                }
+                .button:hover {
+                background: rgb(48, 160, 48);  
+                padding: 18px 40px;  
+                }
+        /*estilos de las section*/
+        section {
+        display: flex;
+        flex-wrap: wrap;    
+        margin: 0 auto;
+        height: 70vh;
+        }
+    /*estilos de section de inicio de unidad*/
+    .unis {
+        margin: auto auto;
+        position: relative; 
+        text-align: center; 
+        color: #fff;  
+    }
+    .agri {
+        background:url(../img/naturales.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    .aves {
+        background: url(../img/avicultura.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .gana {
+        background-image: url(../img/ganaderia.jpg);
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    /*estilos seccion de informacion de cada unidad*/
+    .gener {
+        display: flex;
+        height: auto;
+    }
+    .texto {
+        display: flex;
+        width: 50%;
+        padding: 80px 40px 80px 40px;
+    }
+    .texto p {
+        font-size: 24px;
+        color: #414247;
+        text-align: start;
+    }
+    /*estilos seccion de informacion de unidad de agricultura */
+    .imagen {
+        background-image: url(../img/natu.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+    .ag {
+        background-image: linear-gradient(to bottom, #16a085 0%, #66f43f 100%);
+    }
+        /*estilos seccion de informacion de unidad de avicultura */
+    .imagen-2 {
+        background-image: url(../img/gallina.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+    .av {
+        background-image: linear-gradient(to right, #0aaa3d 0%, #067b0b 100%);
+    }
+        /*estilos seccion de informacion de unidad de ganaderia */
+    .imagen-3 {
+        background-image: url(../img/lacteo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+    .gn {
+        background: linear-gradient(to bottom, #5b845b, #0f9b0f);
+    }
+    /*estilos de la seccion de productos de la unidad*/
+    .product {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    }
+    .prod {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .product .titulos {
+       font-size: 45px; 
+    }
+    .card img {
+        height: 300px;
+    }
+
+    /*estilos footer*/            
+footer{
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+    padding-bottom: 0.1px;
+    
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+.brand{
+    flex-wrap: nowrap;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+}
+.brand+p{
+    font-weight: 500;
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color:#36be46;
+}
+
+    @media (max-width:1024px) {
+ /*media queries para menu*/
+ .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;    
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+    overflow-y: auto;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    }
+    .open-menu,.close-menu{
+        display: block;  
+        background:none;
+        border: none; 
+        align-self: flex-end;
+        margin: 15px 35px;
+        cursor: pointer;
+        }
+        .menu_opened {
+        opacity: 1;
+        pointer-events: all;    
+        }
+        /*media queries para links*/
+        a {
+            width: 91%;    
+            text-align: center;
+            border-radius: 5px;
+            }
+        a:hover {
+            height: auto;    
+        }
+        /*media queries para main*/
+            .unid {
+                padding: 30px;    
+            }
+            .unid-group {
+                flex-direction: column; 
+             }
+            .titulos {
+                padding: 0;
+                margin-top: 30px;
+            }
+            .txt-p {
+               padding: 0; 
+            }
+
+            .button {
+              width: 40%;  
+            }
+            /*media queries para seccion de informacion*/
+            .gener {
+              flex-direction: column;  
+            }
+            .texto {
+              width: 100%;
+              padding: 30px;
+              text-align: center;  
+            }
+            .texto p {
+                font-size: 24px;
+            }
+            .imagen {
+              display: none; 
+            }
+            /*media queries para section*/
+            section {
+                height: 50vh;
+            }
+            /*media queries para imagenes de las card de productos*/
+            .card img {
+                height: 300px;
+            }
+
+            /*media queries del footer*/
+            .social-media{
+                width: 100%;
+                justify-content: space-evenly;
+            }
+        
+            .social-media-icon{
+                margin-left: 0;
+            }
+        
+            .contact-us{
+                text-align: center;
+                width: 95%;
+                margin-bottom: 40px;
+            }
+            .contact-us img {
+                width: 50%;
+                height: 50%;
+                margin: auto 120px;    
+            }
+        }
+        @media screen and (max-width:600px) {
+            /*media queries para tamaño del logo del navegador*/
+            .logo img {
+                width:180px;
+                height:80px;
+            }
+            /*media queries para tamaño de titulos*/
+            .titulo,.brand,.titulos {
+                font-size: 30px !important;
+            }
+            /*media queries para header*/
+            header {
+                height: 80vh;
+            }
+            .wave {
+                top: 60vh;
+                display: block;
+               }
+            /*media queries para main*/
+            .unid-1 img {
+                width: 120px;
+            }
+            .unid-1 a {
+                font-size: 14px;
+                padding: 8px 5px;
+                margin-bottom: 20px;
+            }
+            /*media querie para tamaño de las section*/
+            section {
+                height: 40vh;
+            }
+            /*media querie para seccion de informacion*/
+            .texto p {
+                font-size: 20px;
+            }
+            /*media querie para tamaño de imagen de productos*/
+            .card img {
+                height: 150px;
+            }
+        }

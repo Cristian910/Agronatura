@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+body {
+    margin: 0;    
+    padding: 0;
+    font-family: 'poppins', sans-serif, 'Yeseva One';
+    }
+    /*estilos del navegador*/
+    .nave {
+        display: flex;
+        justify-content: space-between; 
+        background: none;
+        border: none;
+        width: 100%;
+        }
+        .logo {
+        margin-top: 8px;
+        margin-left: 20px;    
+        }
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;  
+        }
+        .menu {
+        
+            display: flex;
+            margin-right: 20px;
+            
+            }
+        /*hover de links del navegador*/
+        a:hover {
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+            color: white;  
+            height: 70%; 
+        }
+        /*estilos botones menu responsive*/
+        .open-menu{
+            position: relative;
+            margin-top: 200px;
+        }
+        .open-menu,.close-menu{
+            display: none;
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 15px;
+            width: 40px;
+            cursor: pointer;
+        }
+        
+/*estilos del header*/
+    header {
+    background: url(../img/puente.jpg);   
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    }  
+    .titulo {
+
+        font-size: 50px;
+        font-family: 'Yeseva One';
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+    .tit {
+    text-align: center;
+    margin-top: 140px;
+    }
+/*estilos de main*/    
+        .unid {
+            display: flex;
+            justify-content: center;
+            padding: 100px 0;
+            background-color: #E1E2E6;
+            width: 100%;
+            } 
+            .unid-content  {
+            text-align: center;
+            }
+            .container {
+                margin: auto 0;   
+                } 
+            /*estilos titulo y texto*/    
+            .titulos {
+            font-size: 50px;
+            line-height: 70px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 25px;
+            }
+            .txt-p {
+            font-size: 16px;
+            margin-bottom: 35px;    
+            }
+            /*estilos mapa y boton*/
+            iframe {
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);  
+                border-radius: 5%;
+            }
+            .button {
+                display: inline-block;
+                padding: 11px 35px;
+                background: rgb(14, 134, 14);
+                color: white;
+                text-transform: uppercase; 
+                text-decoration: none; 
+                cursor: pointer;  
+                border-radius: 5%;
+                }
+                .button:hover {
+                background: rgb(48, 160, 48);  
+                padding: 18px 40px;  
+                }
+    /*estilos contenedores de la section y contenedores de la galeria*/
+    section {
+        display: flex;
+        flex-wrap: wrap;    
+        }
+        .gallery{
+            background: #f2f2f2;
+            height: auto;
+        }
+        .contenedor{
+            width: 90%;
+            max-width: 1000px;
+            overflow: hidden;
+            margin: auto;
+            padding: 60px 0;
+        }   
+        .contenedor-galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+        .subtitulo{
+            color: #8ad0a3;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+/*estilos imagenes galeria*/
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 45px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+section img:hover  {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);  
+    }
+/*estilos para efecto de imagen superpuesta*/
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.show{
+    transform: translate(0);
+}
+/*estilos footer*/            
+footer{
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+    padding-bottom: 0.1px;
+    
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    flex-wrap: nowrap;
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand  {
+    margin: 0;
+}
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#36be46;
+}
+@media (max-width:764px) {
+/*media queries para menu*/
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;    
+        background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+        overflow-y: auto;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    .open-menu,.close-menu{
+        display: block;  
+        background:none;
+        border: none; 
+        align-self: flex-end;
+        margin: 15px 35px;
+        cursor: pointer;
+    }
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;    
+    }
+        /*media queries para links*/
+        a {
+            width: 91%;    
+            text-align: center;
+            border-radius: 5px;
+            }
+        a:hover {
+            height: auto;    
+        }
+        /*media queries main*/
+        .titulos {
+            font-size: 35px;
+            margin-bottom: 25px;
+            margin: auto 0;
+            }
+        iframe {
+            width: 300px;
+            height: 350px;
+        }            
+        /*media queries galeria*/
+        .img-galeria{
+            width: 95%;
+        }
+        
+        .agregar-imagen{
+            width: 90%;
+        }    
+        /*media queries para footer*/
+        .social-media{
+            width: 100%;
+            justify-content: space-evenly;
+        }            
+        .social-media-icon{
+            margin-left: 0;
+        }           
+        .contact-us{
+            text-align: center;
+            width: 95%;
+            margin-bottom: 40px;
+        }
+        .contact-us img {
+            width: 50%;
+            height: 50%;
+            margin: auto 120px;    
+        }
+        }
+        @media screen and (max-width:490px) {
+            .logo img {
+                width:180px;
+                height:80px;
+            }
+            header {
+                height: 80vh;
+            }
+            .titulo,.brand,.titulos {
+                font-size: 30px !important;
+            }
+            section {
+                height: 40vh;
+            }
+            .unid-content a {
+                font-size: 14px;
+                padding: 8px 5px;
+            }
+        }
+            
