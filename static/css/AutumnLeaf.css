@@ -1,0 +1,67 @@
+/*========================================================*/
+/* Author: Klerith                                        */
+/* Page: http://codecanyon.net/user/klerith               */
+/* Email: fernando.herrera85@gmail.com                    */
+/*                                                        */
+/* Version: v2.0                                          */
+/*                                                        */
+/*========================================================*/
+
+.autumnLeaf{
+	position: block;
+	opacity: 0;
+	z-index: 9998;
+}
+
+.autumnLeafFalling{
+	position: block;
+	opacity: 0;
+	z-index: 9998;
+}
+
+.inFront{
+	z-index: 100;
+}
+
+.x1{
+	width: 75px;
+	height: 75px;	
+}
+
+.x2{
+	width: 100px;
+	height: 100px;
+}
+
+.x3{
+	width: 125px;
+	height: 125px;
+}
+
+.x4{
+	width: 150px;
+	height: 150px;
+}
+
+@media (max-width: 600px) {
+	  
+	.x1{
+		width: 45px;
+		height: 45px;	
+	}
+
+	.x2{
+		width: 50px;
+		height: 50px;
+	}
+
+	.x3{
+		width: 60px;
+		height: 60px;
+	}
+
+	.x4{
+		width: 75px;
+		height: 75px;
+	}
+}

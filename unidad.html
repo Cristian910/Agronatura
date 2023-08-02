@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unidades Productivas</title>
     <link rel="icon" href="img/logoblanco.png">
-    <link rel="stylesheet" href="css/unidad.css">
-    <!--links externos de fuentes,iconos y css -->
 	<script defer src="js/menu.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--links herramientas curso de udemy-->
+    <link rel="stylesheet" type="text/css" href="static/css/AutumnLeaf.min.css">
+    <script src="static/js/greensock.js"></script>
+    <script src="static/js/AutumnLeaf.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/modernizr@3.11.2/modernizr.min.js"></script>
+    <link rel="stylesheet" href="css/unidad.css">
+<script>
+    $(document).ready(function() {
+    $('.volver-container').fadeOut();
+    $(window).scroll(function() {
+      var headerHeight = $('.titulo').outerHeight();
+      var scrollTop = $(window).scrollTop();
+      
+      if (scrollTop > headerHeight) {
+        $('.volver-container').fadeIn();
+      } else {
+        $('.volver-container').fadeOut();
+      }
+    });
+  });
+  //Modernizr
+  if (!Modernizr.boxshadow) {
+    document.documentElement.classList.add('no-boxshadow');
+  }
+  
+  if (!Modernizr.cssgradients) {
+    document.documentElement.classList.add('no-cssgradients');
+  }
+  
+  if (!Modernizr.flexbox) {
+    document.documentElement.classList.add('no-flexbox');
+  }
+</script>
   </head>
   <body>
 	
-<header>
+<header id="inicio">
         <!--navegador-->
     <nav class="nave">
         <!--logo de la pagina-->
 		<div class="logo">
-			<img class="animate__animated animate__backInDown" src="img/agronatura.png" alt="" width="200px" height="90px">
+			<img class="animate__animated animate__backInDown" src="img/agronatura.png" alt="" width="200" height="90">
 		</div>
         <button class="open-menu">
-        <img src="img/menu.png" alt="" width="45px">
+        <img src="img/menu.png" alt="" width="45">
         </button>
 	<div class="menu animate__animated animate__slideInDown">
         <button class="close-menu">
-        <img src="img/x.png" alt="" width="50px">
+        <img src="img/x.png" alt="" width="50">
         </button>
         <!--link a las otras paginas-->
 		 <a href="index.html">Inicio</a>
      <a href="unidad.html">Unidades Productivas</a> 
-		 <a href="nosotros.html">Nosotros</a>
+		 <a href="nosotros.php">Nosotros</a>
 	</div>
 </nav>  
-          <!--titulo header-->
 <div class="tit animate__animated animate__slideInDown">
   <h1 class="titulo"> Unidades Productivas </h1>
 </div>
 </header>
-<!--main-->
+<div class="volver-container">
+  <a class="btn-volver" href="#inicio"><img src="img/icon.png" alt=""></a>
+</div>
 <main class="unid">
 <div class="unid-content container">
             <!--titulo main-->
@@ -95,42 +129,34 @@
 <h2 class="titulos">productos de la unidad</h2>
 <div class="prod row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
-    <div class="card">
-      <img src="img/curuba.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Curuba</h5>
-        <p class="card-text"></p>
+    <figure class="snip1321 card"><img src="img/curuba.jpg" alt="."/>
+      <figcaption><i class="ion-upload"></i>
+        <h2>curuba</h2>
+      </figcaption>
+    </figure>
       </div>
+      <div class="col">
+        <figure class="snip1321 card"><img src="img/cebolla.jpg" alt="."/>
+          <figcaption><i class="ion-upload"></i>
+            <h2>cebolla larga</h2>
+          </figcaption>
+        </figure>
+          </div>
+          <div class="col">
+            <figure class="snip1321 card"><img src="img/tomate.jpg" alt="."/>
+              <figcaption><i class="ion-upload"></i>
+                <h2>tomate</h2>
+              </figcaption>
+            </figure>
+              </div>
+              <div class="col">
+                <figure class=" card snip1321"><img src="img/uchuva.png" alt="."/>
+                  <figcaption><i class="ion-upload"></i>
+                    <h2>uchuva</h2>
+                  </figcaption>
+                </figure>
+                  </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/cebolla.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Cebolla Larga</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/tomate.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Tomate</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/uchuva.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Uchuva</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-</div>
 </section>
           <!--inicio unidad de avicultura-->
 <section class="info aves" id="avicultura">
@@ -153,42 +179,34 @@
     <h2 class="titulos">productos de la unidad</h2>
     <div class="prod row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
-        <div class="card">
-          <img src="img/ahuevos.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Huevos A</h5>
-            <p class="card-text"></p>
+        <figure class="snip1321 card"><img src="img/ahuevos.jpg" alt="."/>
+          <figcaption><i class="ion-upload"></i>
+            <h2>Huevos A</h2>
+          </figcaption>
+        </figure>
           </div>
+          <div class="col">
+            <figure class="snip1321 card"><img src="img/aahuevos.jpg" alt="."/>
+              <figcaption><i class="ion-upload"></i>
+                <h2>Huevos AA</h2>
+              </figcaption>
+            </figure>
+              </div>
+              <div class="col">
+                <figure class="snip1321 card"><img src="img/aaahuevos.jpg" alt="."/>
+                  <figcaption><i class="ion-upload"></i>
+                    <h2>Huevos AAA</h2>
+                  </figcaption>
+                </figure>
+                  </div>
+                  <div class="col">
+                    <figure class=" card snip1321"><img src="img/codorniz.jpg" alt="."/>
+                      <figcaption><i class="ion-upload"></i>
+                        <h2>Huevos de codorniz</h2>
+                      </figcaption>
+                    </figure>
+                      </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="img/aahuevos.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Huevos AA</h5>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="img/aaahuevos.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Huevos AAA</h5>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="img/codorniz.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Huevos de codorniz</h5>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 <!--inicio unidad de ganaderia-->
   <section class="info gana" id="ganaderia">
@@ -210,48 +228,40 @@
           <h2 class="titulos">productos de la unidad</h2>
           <div class="prod row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-              <div class="card">
-                <img src="img/leche.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Leche </h5>
-                  <p class="card-text"></p>
+              <figure class="snip1321 card"><img src="img/leche.jpg" alt="."/>
+                <figcaption><i class="ion-upload"></i>
+                  <h2>Leche</h2>
+                </figcaption>
+              </figure>
                 </div>
+                <div class="col">
+                  <figure class="snip1321 card"><img src="img/quesodoble.jpg" alt="."/>
+                    <figcaption><i class="ion-upload"></i>
+                      <h2>  Queso Doble crema</h2>
+                    </figcaption>
+                  </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="snip1321 card"><img src="img/quesocampesino.jpg" alt="."/>
+                        <figcaption><i class="ion-upload"></i>
+                          <h2>Queso Campesino</h2>
+                        </figcaption>
+                      </figure>
+                        </div>
+                        <div class="col">
+                          <figure class=" card snip1321"><img src="img/yogurt.jpg" alt="."/>
+                            <figcaption><i class="ion-upload"></i>
+                              <h2>Yogurt</h2>
+                            </figcaption>
+                          </figure>
+                            </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/quesodoble.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Queso doble crema</h5>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/quesocampesino.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Queso campesino</h5>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/yogurt.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">yogurt</h5>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-            </div>
-          </div>
           </section>
   <!--pie de pagina-->
   <footer id="footer">
     <div class="contenedor footer-content">
             <div class="contact-us">
-              <img src="img/agronatura.png" alt="" width="200px" height="100px">
+              <img src="img/agronatura.png" alt="" width="200" height="100">
               <h2 class="brand">AgroNatura </h2>
                  
                 <p>Sembrando futuro, cosechando éxito.</p>
@@ -265,12 +275,25 @@
                     <i class='bx bxl-twitter' ></i>
                 </a>
                 <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" class="social-media-icon" target="_blank">
-                    <img src="img/logoblanco.png" alt="" width="80%"
-                    style="margin-top: 10px;">
+                  <img src="img/logoblanco.png" alt="" style="width: 80%;margin-top: 10px;">
                 </a>
             </div>
     </div>
     <div class="line"></div>
   </footer>
+  <!--script de las hojas,herramienta curso de udemy-->
+  <script type="text/javascript">
+    $.AutumnLeafStart({
+      initialleaves: 4,
+          maxyposition: 300,
+          infinite: false,
+          fallingsequence: 2750,
+          multiplyclick: false,
+          multiplynumber: 0,
+          leavesfolder: "static/AutumnLeaves/",
+          howmanyimgsare: 8,
+    });
+    $.klanimate();
+    </script>
   </body>
 </html>
