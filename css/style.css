@@ -80,7 +80,7 @@ body {
         transform: scale(1.1) rotate(360deg);
       }
         header {
-            background: url(../img/papi.jpg) no-repeat center;
+            background: url(../img/header.jpg) no-repeat center;
             height: 100vh ;
             opacity: 0.9;
             background-size: cover;
