@@ -20,12 +20,9 @@ Este repositorio contiene el código fuente y los recursos utilizados para const
 
 - HTML5
 - CSS3
-- JavaScript (jQuery)
-- Bootstrap
-- Google Fonts
+- JavaScript
+- jQuery
 - Materialize CSS
-- Boxicons
-- Modernizr
 - GreenSock Animation Platform (GSAP)
 - AutumnLeaf.js
 
